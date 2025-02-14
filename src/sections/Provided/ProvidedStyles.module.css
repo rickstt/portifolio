@@ -13,12 +13,21 @@
     img:hover{
         transform: scale(1.02);
     }
-    
-    .providedContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
+
 }
 
+.providedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (width >= 800px) {
+    .providedContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 30px;
+    }
+}
