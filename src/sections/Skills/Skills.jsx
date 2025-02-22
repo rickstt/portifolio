@@ -1,9 +1,16 @@
 import React from 'react'
 import styles from './SkillsStyles.module.css'
-import checkMarkIcon from '../../assets/checkmark-dark.svg'
+import checkMarkDark from '../../assets/checkmark-dark.svg'
+import CheckMarkLight from '../../assets/checkmark-light.svg';
 import SkillList from '../../common/SkillList'
+import { useTheme } from '../../common/ThemeContext';
 
 function Skills() {
+
+  const { theme, toggleTheme} = useTheme();
+  
+      const checkMarkIcon = theme === 'light' ? CheckMarkLight : checkMarkDark;
+
   return <section id='skills' className={styles.container}>
     <h1 className="sectionTitle">Competências</h1>
     <div className={styles.skillList}>

@@ -29,7 +29,7 @@ function Hero() {
                 <br />
                 Santos
             </h1>
-            <h2>Desenvolvedor Fullstack</h2>
+            <h2>Software Engineer</h2>
             <span>
                 <a href="https://github.com/rickstt" target='_blank'>
                     <img src={gitIcon} alt="Icone Github" />
@@ -39,8 +39,8 @@ function Hero() {
                 </a>
             </span>
             <p className={styles.description}>Apaixonado por inovação e transformação digital, fundador do projeto Seensus, CTO da Blist Code inc. Presto serviços de consultoria em tecnologia e atuo na criação de sistemas inteligentes</p>
-            <a href={CV} download>
-                <button className="hover">Resumo</button>
+            <a href="#contact">
+                <button className="hover">Envie sua mensagem</button>
             </a>
         </div>
     </section>

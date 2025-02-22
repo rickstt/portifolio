@@ -24,6 +24,9 @@ body {
     justify-content: center;
     margin: 0 auto 60px;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 #root {
     display: flex;
